@@ -20,7 +20,7 @@
    
 <!-- header section starts  -->
 
-<header class="header fixed-top">
+<header class="header fixed-top glass">
 
    <div class="container">
 
@@ -56,17 +56,17 @@
          <div class="content text-center text-md-left">
             <h3>Signature Authentication</h3>
             <p>Truth for us is simply a collective name for verification process</p>
-            <a class="link-btn">Upload Image</a>
+            <!-- <a class="link-btn">Upload Image</a> -->
+            <form class="uplaod-display" action="/uploadProfilePicture" enctype="multipart/form-data" method="POST">  
+               <input class="link-btn glass" type="file" name="mypic" required/>
+               <input class="link-btn upload-btn" type="submit" value="Upload Image"> 
+           </form>
          </div>
       </div>
    </div>
+  
    
-   <form action="/uploadProfilePicture" enctype="multipart/form-data" method="POST">
-      
-        <span>Upload Profile Picture:</span>  
-        <input type="file" name="mypic" required/> <br>
-        <input type="submit" value="submit"> 
-    </form>
+   
 </section>
 
 <!-- home section ends -->
@@ -125,7 +125,7 @@
             <i class="fas fa-star-half-alt"></i>
          </div>
          <h3>Pratik Shrivastav</h3>
-         <span>Student</span>
+         <span>Developer</span>
       </div>
 
       <div class="box">
@@ -133,13 +133,13 @@
          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, iure? Nemo est aspernatur voluptatum id, laboriosam asperiores iure omnis alias?</p>
          <div class="stars">
             <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
          </div>
          <h3>Juhi Ramod</h3>
-         <span>Student</span>
+         <span>Developer</span>
       </div>
 
       <div class="box">
@@ -153,7 +153,7 @@
             <i class="fas fa-star-half-alt"></i>
          </div>
          <h3>Rajit Shetty</h3>
-         <span>Student</span>
+         <span>Developer</span>
       </div>
 
    </div>
